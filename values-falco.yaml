@@ -1,0 +1,21 @@
+driver:
+  enabled: true
+  kind: modern_ebpf
+falco:
+  json_output: true
+  json_include_output_property: true
+  json_include_tags_property: true
+  http_output:
+    enabled: true
+    url: "http://falcosidekick:2801/"
+    user_agent: "falcosecurity/falcosidekick"
+    insecure: true
+    ca_cert: ""
+    ca_bundle: ""
+    ca_path: "/etc/falco/certs/"
+    mtls: false
+    client_cert: "/etc/falco/certs/client/client.crt"
+    client_key: "/etc/falco/certs/client/client.key"
+    echo: false
+    compress_uploads: false
+    keep_alive: false
