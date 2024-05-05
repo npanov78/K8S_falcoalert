@@ -29,7 +29,7 @@ driver:
 8. Устанавливаем Falco: ```helm install falco -f values-falco.yaml falcosecurity/falco -n secured-ns```
 9. Запускаем бота через ``python3 main.py``
 
-- На данном этапе кластер и бот находятся полностью в рабочем состоянии
+- На данном этапе кластер и бот находятся полностью в рабочем состоянии. Не забудьте указать свой токен бота в файле values-kick.yaml
 
 ## Триггер алерта Falco
 Запустить срабатывание уведомления можно несколькими способами, подробнее можно посмотреть на git falco: https://github.com/falcosecurity/falcosidekick
